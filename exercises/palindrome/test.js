@@ -8,6 +8,10 @@ test('"aba" is a palindrome', () => {
   expect(palindrome('aba')).toBeTruthy();
 });
 
+test('"abBa" is a palindrome', () => {
+  expect(palindrome('abBa')).toBeTruthy();
+});
+
 test('" aba" is not a palindrome', () => {
   expect(palindrome(' aba')).toBeFalsy();
 });
@@ -25,7 +29,7 @@ test('"1000000001" a palindrome', () => {
 });
 
 test('"Fish hsif" is not a palindrome', () => {
-  expect(palindrome('Fish hsif')).toBeFalsy();
+  expect(palindrome('Fish hsif')).toBeTruthy();
 });
 
 test('"pennep" a palindrome', () => {
